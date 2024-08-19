@@ -33,7 +33,7 @@ int main(){
     scanf("%d",&numeroPontosTuristicos);
    
     printf(" --- \n");
-    printf("CONFIRMACAO!\n");
+    printf("CARTA CADASTRADA COM SUCESSO!\n");
     printf(" --- \n");
     printf("Estado: %c\n",estado);
     printf("Codigo da Carta: %s\n",codigoCarta);

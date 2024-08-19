@@ -1,5 +1,11 @@
 #include <stdio.h>
-
+float calcularDensidadePopulacional(int populacao,float area){
+    return (populacao/area);
+}
+float calcularPIBPerCapita(float pib,int populacao){
+    pib *= 1000000000; //transformar de fato pib em bilhoes
+    return (pib/populacao);
+}
 int main(){
     char estado; 
     char codigoCarta[4]; 
@@ -8,6 +14,8 @@ int main(){
     float area;
     float pib;
     int numeroPontosTuristicos;
+    float densidadePopulacional;
+    float pibPerCapita;
 
     printf("Desafio Cartas Super Trunfos\n");
     
@@ -31,7 +39,10 @@ int main(){
 
     printf("Digite o NUMERO de Pontos Turisticos:");
     scanf("%d",&numeroPontosTuristicos);
-   
+    
+    densidadePopulacional=calcularDensidadePopulacional(populacao,area);
+    pibPerCapita=calcularPIBPerCapita(pib,populacao);
+
     printf(" --- \n");
     printf("CARTA CADASTRADA COM SUCESSO!\n");
     printf(" --- \n");
@@ -39,9 +50,12 @@ int main(){
     printf("Codigo da Carta: %s\n",codigoCarta);
     printf("Nome da Cidade: %s\n",nomeCidade);
     printf("Populacao: %d\n",populacao);
-    printf("Area: %f km²\n",area);
-    printf("PIB: %f bilhões de reais\n",pib);
+    printf("Area: %.2f km²\n",area);
+    printf("Densidade Populacional: %.2f km²\n",densidadePopulacional);
+    printf("PIB: %.2f bilhões de reais\n",pib);
+    printf("PIB per Capita: %.0f reais\n",pibPerCapita);
     printf("Numero de Pontos Turisticos: %d",numeroPontosTuristicos);
     
     return 0;
 }
+

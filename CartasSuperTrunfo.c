@@ -32,7 +32,7 @@ int main(){
 
     printf("Desafio Cartas Super Trunfos\n");
     
-    printf("-CADASTRAR PRIMEIRA CARTA-");
+    printf("--CADASTRAR PRIMEIRA CARTA--\n");
     //digitando a primeira carta
     printf("Digite o NOME do Estado da primeira carta:");
     scanf("%s",&estadoA);
@@ -59,7 +59,7 @@ int main(){
     pibPerCapitaA=calcularPIBPerCapita(pibA,populacaoA);
     superPoderA+=(float)populacaoA+areaA+pibA+pibPerCapitaA+densidadePopulacionalA+numeroPontosTuristicosA;
 
-    printf("-CADASTRAR SEGUNDA CARTA-");
+    printf("--CADASTRAR SEGUNDA CARTA--\n");
     //digitando a segunda carta
     printf("Digite o NOME do Estado da segunda carta:");
     scanf("%s",&estadoB);

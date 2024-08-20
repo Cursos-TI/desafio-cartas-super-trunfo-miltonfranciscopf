@@ -7,8 +7,8 @@ float calcularPIBPerCapita(float pib,int populacao){
     return (pib/populacao);
 }
 int main(){
-    //codigo da primeira carta
-    char estadoA;//letra
+    //iniciando variaveis da primeira carta
+    char estadoA;//uma letra
     char codigoCartaA[3];//letra + numero de dois digitos(ex. 01)
     char nomeCidadeA[70];
     int populacaoA;
@@ -18,8 +18,8 @@ int main(){
     float densidadePopulacionalA;
     float pibPerCapitaA;
     float superPoderA;
-    //codigo da segunda carta
-    char estadoB;//letra
+    //iniciando variaveis da segunda carta
+    char estadoB;//uma letra
     char codigoCartaB[3];//letra + numero de dois digitos(ex. 01)
     char nomeCidadeB[70];
     int populacaoB;
@@ -86,7 +86,7 @@ int main(){
     pibPerCapitaB=calcularPIBPerCapita(pibB,populacaoB);
     superPoderB+=(float)populacaoB+areaB+pibB+pibPerCapitaB+densidadePopulacionalB+numeroPontosTuristicosB;
 
-
+    //imprimindo resultado
     printf(" --- \n");
     printf("PRIMEIRA CARTA CADASTRADA COM SUCESSO!\n");
     printf(" --- \n");
@@ -113,7 +113,7 @@ int main(){
     printf("PIB per Capita: %.0f reais\n",pibPerCapitaB);
     printf("Numero de Pontos Turisticos: %d\n",numeroPontosTuristicosB);
     printf(" --- \n");
-    printf("--RESULTADO DA COMPARACAO--");
+    printf("--RESULTADO DA COMPARACAO--\n");
     printf("Populacao: %d\n",populacaoA>populacaoB);
     printf("Area: %d\n",areaA>areaB);
     printf("Densidade Populacional: %d\n",densidadePopulacionalA<densidadePopulacionalB);

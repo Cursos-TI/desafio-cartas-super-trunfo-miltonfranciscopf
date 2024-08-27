@@ -41,7 +41,7 @@ int main(){
     scanf("%s",&codigoCartaA);
 
     printf("Digite o NOME da Cidade da primeira carta:");
-    scanf("%s",&nomeCidadeA);
+    scanf(" %s", &nomeCidadeA);
 
     printf("Digite o NUMERO da Populacao da primeira carta:");
     scanf("%d",&populacaoA);
@@ -50,7 +50,7 @@ int main(){
     scanf("%f",&areaA);
 
     printf("Digite o PIB da primeira carta:");
-    scanf(" %f",&pibA);
+    scanf("%f",&pibA);
 
     printf("Digite o NUMERO de Pontos Turisticos da primeira carta:");
     scanf("%d",&numeroPontosTuristicosA);
@@ -68,7 +68,7 @@ int main(){
     scanf("%s",&codigoCartaB);
 
     printf("Digite o NOME da Cidade da segunda carta:");
-    scanf("%s",&nomeCidadeB);
+    scanf(" %s",&nomeCidadeB);
 
     printf("Digite o NUMERO da Populacao da segunda carta:");
     scanf("%d",&populacaoB);
@@ -77,7 +77,7 @@ int main(){
     scanf("%f",&areaB);
 
     printf("Digite o PIB da segunda carta:");
-    scanf(" %f",&pibB);
+    scanf("%f",&pibB);
 
     printf("Digite o NUMERO de Pontos Turisticos da segunda carta:");
     scanf("%d",&numeroPontosTuristicosB);

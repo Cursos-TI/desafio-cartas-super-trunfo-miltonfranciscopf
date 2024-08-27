@@ -31,7 +31,7 @@ int main(){
     float superPoderB;
 
     printf("Desafio Cartas Super Trunfos\n");
-    
+
     printf("--CADASTRAR PRIMEIRA CARTA--\n");
     //digitando a primeira carta
     printf("Digite o NOME do Estado da primeira carta:");
